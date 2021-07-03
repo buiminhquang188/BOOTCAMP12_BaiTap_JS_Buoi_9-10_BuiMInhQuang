@@ -214,7 +214,7 @@
 
           <!-- Modal body -->
           <div class="modal-body">
-            <form role="form">
+            <form role="form" id="formNV">
               <div class="form-group">
                 <div class="input-group">
                   <div class="input-group-prepend">
@@ -333,10 +333,12 @@
                     ></span>
                   </div>
                   <select class="form-control" id="chucvu">
-                    <option>Chọn chức vụ</option>
-                    <option>Sếp</option>
-                    <option>Trưởng phòng</option>
-                    <option>Nhân viên</option>
+                    <option style="display: none" value="">
+                      -- Chọn chức vụ --
+                    </option>
+                    <option value="Giám đốc">Giám đốc</option>
+                    <option value="Trưởng phòng">Trưởng phòng</option>
+                    <option value="Nhân viên">Nhân viên</option>
                   </select>
                 </div>
 
@@ -409,5 +411,9 @@
         });
       });
     </script>
+    <script src="js/models/NhanVien.js"></script>
+    <script src="js/models/DanhSachNhanVien.js"></script>
+    <script src="js/models/Validator.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

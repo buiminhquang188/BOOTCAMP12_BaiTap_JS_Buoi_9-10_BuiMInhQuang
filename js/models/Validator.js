@@ -2,7 +2,7 @@ function Validator() {
     // Validator theo đề bài câu 4
     this.kiemTraRong = function (value, showPlace, mess) {
         if (!value) {
-            debugger
+            debugger;
             getEle(showPlace).style.display = 'block';
             getEle(showPlace).innerHTML = mess;
             return false;
